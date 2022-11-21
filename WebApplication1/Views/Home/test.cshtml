@@ -1,0 +1,135 @@
+﻿@model WebApplication1.Helpers.Retrive.Structure
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@Html.DropDownList("FromJson", new SelectList(Enumerable.Empty
+    <SelectListItem>()))
+<div id="Table" class="custom-table"></div>
+<h2>test12</h2>
+
+@section Scripts
+{
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.ajax({
+                url: "listdata",
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                datatype: JSON,
+                success: function(result) {
+                    $(result).each(function() {
+                        $("#FromJson").append($("<option></option>").html(this.value).val(this.id));
+                    });
+                },
+                error: function(data) {}
+            });
+        });
+    </script>
+    <script>
+
+           
+            $('#FromJson').on('change', function() {
+                 $("#Table").empty();
+                 const table = document.getElementById('Table');
+                     const th=document.createElement("th");
+                     const th1=document.createElement("th");
+                     const th2=document.createElement("th");
+                     const th3=document.createElement("th");
+                     const th4=document.createElement("th");
+                     const th5=document.createElement("th");
+                     const th6=document.createElement("th");
+                     const th7=document.createElement("th");
+                     const th8=document.createElement("th");
+                     
+                     
+                     const timeh=document.createTextNode("Time");
+                     const Node=document.createTextNode("Node");
+                     const flow=document.createTextNode("Flow");
+                     const velocity=document.createTextNode("Velocity");
+                     const unitheadloss=document.createTextNode("Unitheadloss");
+                     const frictionfactor=document.createTextNode("Frictionfactor");
+                     const diameter=document.createTextNode("Diameter");
+                     const roughness=document.createTextNode("Roughness");
+                     const lenght=document.createTextNode("Lenght");
+                    th.appendChild(timeh);
+                    th1.appendChild(Node);
+                    th2.appendChild(flow);
+                    th3.appendChild(velocity);
+                    th4.appendChild(unitheadloss);
+                    th5.appendChild(frictionfactor);
+                    th6.appendChild(diameter);
+                    th7.appendChild(roughness);
+                    th8.appendChild(lenght);
+                    
+                    const trh=document.createElement("tr");
+                    trh.appendChild(th);
+                    trh.appendChild(th1);
+                    trh.appendChild(th2);
+                    trh.appendChild(th3);
+                    trh.appendChild(th4);
+                    trh.appendChild(th5);
+                    trh.appendChild(th6);
+                    trh.appendChild(th7);
+                    trh.appendChild(th8);
+                    table.appendChild(trh);
+                var a=this.value;
+                $.ajax({
+                    url:"listofresults",
+                    type: "GET",
+                    data: {data1:a},
+                    dataType: 'json',  
+                    success: function (result){
+                           $(result.links).each(function (){
+                            
+                             const tr = document.createElement('tr');
+                             const td1 = document.createElement('td');
+                             const td2=document.createElement('td');
+                             const td3=document.createElement('td');
+                             const td4=document.createElement('td');
+                             const td5=document.createElement('td');
+                             const td6=document.createElement('td');
+                             const td7=document.createElement('td');
+                             const td8=document.createElement('td');
+                             const td9=document.createElement('td');
+                             const flow = document.createTextNode(this.flow);
+                             const time=document.createTextNode(this.step.step);
+                             const linkname=document.createTextNode(this.link.name);
+                             const velocity=document.createTextNode(this.velocity);
+                             const unitheadloss=document.createTextNode(this.unitheadloss);
+                             const frictionfactor=document.createTextNode(this.frictionfactor);
+                             const diameter=document.createTextNode(this.diameter);
+                             const roughness=document.createTextNode(this.roughness);
+                             const lenght=document.createTextNode(this.lenght);
+                             td1.appendChild(time);
+                             td2.appendChild(linkname);
+                             td3.appendChild(flow);
+                             td4.appendChild(velocity);
+                             td5.appendChild(unitheadloss);
+                             td6.appendChild(frictionfactor);
+                             td7.appendChild(diameter);
+                             td8.appendChild(roughness);
+                             td9.appendChild(lenght);
+                             tr.appendChild(td1);
+                             tr.appendChild(td2);
+                             tr.appendChild(td3);
+                             tr.appendChild(td4);
+                             tr.appendChild(td5);
+                             tr.appendChild(td6);
+                             tr.appendChild(td7);
+                             tr.appendChild(td8);
+                             tr.appendChild(td9);
+                             table.appendChild(tr)
+                    })
+                           },
+                           
+                    
+                    error:function (data){}
+                    })
+                })
+            
+    </script>
+}

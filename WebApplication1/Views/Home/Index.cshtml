@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model WebApplication1.Helpers.Retrive.Structure
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Hot Reload</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @foreach (var items in Model.network.Nodes)
+    {
+        @Html.Label(items.Name);<br/>
+        @Html.Label(items.Coordinate.X.ToString());<br/>
+        @Html.Label(items.Coordinate.Y.ToString());<br/>
+    } 
+</div>
+@section Scripts
+{
+    
+}

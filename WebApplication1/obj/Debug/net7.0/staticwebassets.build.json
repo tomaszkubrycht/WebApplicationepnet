@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7ZwCLy+IRSfr5Vx2//TxODUhvLsaFksqfNgjad5H3mg=",
+  "Hash": "vNVXw1e6QnWMIlSOXb1+DssvXsqSpPSyaVM3GHogWHw=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\tomas\\RiderProjects\\WebApplication1\\WebApplication1\\wwwroot\\js\\labeler.js",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tomas\\RiderProjects\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "js/labeler.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\labeler.js"
     },
     {
       "Identity": "C:\\Users\\tomas\\RiderProjects\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",

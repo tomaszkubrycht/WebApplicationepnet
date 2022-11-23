@@ -41,6 +41,16 @@ public class HomeController : Controller
         return View(json);
     }
 
+    public JsonResult data()
+    {
+        string inFile = @"c:\users\tomas\desktop\SLC_HGW.inp";
+        Retrive rewrite=new Retrive();
+        string hydFile="temp.678";
+        string qualFile="qual.879";
+        List<string> args = new List<string>{"-w"};
+        json =rewrite.retrivedata(inFile,hydFile,qualFile,args);
+        return Json(json);
+    }
     public IActionResult Privacy()
     {
         return View();

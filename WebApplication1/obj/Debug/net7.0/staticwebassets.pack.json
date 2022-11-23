@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\tomas\\RiderProjects\\WebApplication1\\WebApplication1\\wwwroot\\js\\labeler.js",
+      "PackagePath": "staticwebassets\\js\\labeler.js"
+    },
+    {
       "Id": "C:\\Users\\tomas\\RiderProjects\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

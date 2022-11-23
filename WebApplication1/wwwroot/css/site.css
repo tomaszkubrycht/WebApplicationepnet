@@ -20,17 +20,3 @@ html {
 body {
   margin-bottom: 60px;
 }
-#Table {
-  color: #0b5ed7;
-  padding: 20px;
-}
-#Table tr{
-  color: black;
-}
-td {
-  width: 100px;
-}
-tr,td,th {
-  border: 1px solid black;
-  border-collapse: collapse;
-}

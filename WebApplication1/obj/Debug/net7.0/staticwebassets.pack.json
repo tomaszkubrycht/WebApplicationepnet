@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\js\\labeler.js"
     },
     {
+      "Id": "C:\\Users\\tomas\\RiderProjects\\WebApplication1\\WebApplication1\\wwwroot\\js\\network.js",
+      "PackagePath": "staticwebassets\\js\\network.js"
+    },
+    {
       "Id": "C:\\Users\\tomas\\RiderProjects\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

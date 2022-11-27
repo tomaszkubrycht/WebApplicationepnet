@@ -13,7 +13,6 @@ C:\Users\tomas\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net7.0\We
 C:\Users\tomas\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.AssemblyInfoInputs.cache
 C:\Users\tomas\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.AssemblyInfo.cs
 C:\Users\tomas\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.csproj.CoreCompileInputs.cache
-C:\Users\tomas\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\tomas\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.RazorAssemblyInfo.cache
 C:\Users\tomas\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.RazorAssemblyInfo.cs
 C:\Users\tomas\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net7.0\staticwebassets\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props

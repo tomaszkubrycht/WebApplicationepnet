@@ -1,0 +1,21 @@
+﻿@using System.Reflection
+@using Epanet.Network.Structures
+@model Epanet.Network.Network
+<h1 id="naglowek">test</h1>
+
+<p>@Model.Links.Count</p>
+<p>@Model.Nodes.Count</p>
+<p>@Model.Patterns.Count</p>
+@foreach (var item in Model.Patterns)
+{
+   
+    
+    
+}
+
+@section Scripts
+{
+    <script>
+    $('#naglowek').text('tomasz');
+    </script>
+}
